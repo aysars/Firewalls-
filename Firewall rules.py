@@ -7,7 +7,7 @@ def check_firewall_rules(ip,rules):
     for rule_ip,action in rules.items():
        if ip == rule_ip:
         return action
-    return "allow"     
+    return "allow"       
 
 def main():
    firewall_rules = {
@@ -25,8 +25,7 @@ def main():
     print(f"IP:{ip_address}, Action{action}, Random number{random_number}")
 
 
-
-
 if __name__ == "__main__":
 
     main()
+
