@@ -18,14 +18,14 @@ def main():
         "192.168.1.5": "block",
         "192.168.1.14": "block"
     } 
-    for _ in range(20):
-    ip_address= generate_random_ip()
-    action = check_firewall_rules(ip_address, firewall_rules )
-    random_number = random.randint(0,9999)
-    print(f"IP:{ip_address}, Action{action}, Random number{random_number}")
+    
+   for _ in range(20):
+     ip_address= generate_random_ip()
+     action = check_firewall_rules(ip_address, firewall_rules )
+     random_number = random.randint(0,9999)
+     print(f"IP:{ip_address}, Action{action}, Random number{random_number}")
 
 
 if __name__ == "__main__":
 
     main()
-
